@@ -5,14 +5,14 @@ module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
-  
+
   content: [
     "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
     "./storage/framework/views/*.php",
     "./resources/views/**/*.blade.php",
     "./resources/js/**/*.{ts,tsx,vue}",
   ],
-  
+
   theme: {
     container: {
       center: true,
@@ -65,20 +65,20 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: {height: 0},
+          to: {height: "var(--radix-accordion-content-height)"},
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          from: {height: "var(--radix-accordion-content-height)"},
+          to: {height: 0},
         },
         "collapsible-down": {
-          from: { height: 0 },
-          to: { height: 'var(--radix-collapsible-content-height)' },
+          from: {height: 0},
+          to: {height: 'var(--radix-collapsible-content-height)'},
         },
         "collapsible-up": {
-          from: { height: 'var(--radix-collapsible-content-height)' },
-          to: { height: 0 },
+          from: {height: 'var(--radix-collapsible-content-height)'},
+          to: {height: 0},
         },
       },
       animation: {
