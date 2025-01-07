@@ -54,6 +54,18 @@
     "dev": [
       "Composer\\Config::disableProcessTimeout",
       "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan inertia:start-ssr\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"pnpm run dev\" --names=ssr,queue,logs,vite"
+    ],
+    "lint": [
+      "./vendor/bin/pint ==test"
+    ],
+    "pint": [
+      "./vendor/bin/pint"
+    ],
+    "stan": [
+      "./vendor/bin/phpstan analyse --memory-limit=3G"
+    ],
+    "test": [
+      "@php artisan test --profile"
     ]
   },
   "extra": {
